@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author dinis
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Primeiro círculo
+        System.out.println("Utente 1");
+        Utente u1 = new Utente();
+        u1.setNome("Dinis");
+        u1.setGenero("Masculino");
+        u1.setIdade(19);
+        u1.setAltura((float) 1.75);
+        u1.setPeso(85);
+        System.out.println(u1.toString());
+        System.out.println(u1.imc());
+        System.out.println(u1.grau());
+    }
+    
+}
