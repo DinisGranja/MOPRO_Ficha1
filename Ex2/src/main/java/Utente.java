@@ -9,17 +9,20 @@
  */
 public class Utente {
 
+    public static int count=0;  
     private String nome, genero;
     private int idade, peso;
     private float altura;
-    
+
     public Utente() {
+        count++;
     }
 
     public Utente(String nome, String genero, int idade) {
         setNome(nome);
         setGenero(genero);
         setIdade(idade);
+        count++;
     }
 
     public Utente(String nome, String genero, int idade, int peso, float altura) {
@@ -28,6 +31,7 @@ public class Utente {
         setIdade(idade);
         setPeso(peso);
         setAltura(altura);
+        count++;
     }
 
     //Nome
@@ -77,7 +81,7 @@ public class Utente {
 
     //Descrição
     public String toString() {
-        return "Nome: " + getNome() + " Gênero: " + getGenero() + " Idade: " + getIdade() + " Altura: " + getAltura() + " Peso: " + getPeso();
+        return "Nome: " + getNome() + "\nGênero: " + getGenero() + "\nIdade: " + getIdade() + "\nAltura: " + getAltura() + "\nPeso: " + getPeso();
     }
 
     //IMC
@@ -95,6 +99,20 @@ public class Utente {
             return "Excesso de peso";
         } else {
             return "Obeso";
+        }
+    }
+
+    //Diferença de idade
+    public int dif_idade(int idade1) {
+        return idade1 - this.idade;
+    }
+    
+    //Utente mais novo
+    public String mais_novo(int idade1, String nome1) {
+        if (idade1 < this.idade) {
+            return nome1;
+        }else{
+            return this.nome;
         }
     }
 }
