@@ -43,9 +43,9 @@ public class Main {
         
         System.out.println("");
         System.out.print("Diferença de anos: ");
-        System.out.println(u2.dif_idade(u1.getIdade()));
+        System.out.println(u2.dif_idade(u1));
         System.out.print("Utente mais novo: ");
-        System.out.println(u2.mais_novo(u1.getIdade(), u1.getNome()));
+        System.out.println(u2.mais_novo(u1));
         System.out.print("Quantidade de utentes: ");
         System.out.println(Utente.count);
     }

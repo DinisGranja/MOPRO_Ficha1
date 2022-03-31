@@ -103,14 +103,14 @@ public class Utente {
     }
 
     //Diferença de idade
-    public int dif_idade(int idade1) {
-        return idade1 - this.idade;
+    public int dif_idade(Utente outroUtente) {
+        return this.idade - outroUtente.idade;
     }
     
     //Utente mais novo
-    public String mais_novo(int idade1, String nome1) {
-        if (idade1 < this.idade) {
-            return nome1;
+    public String mais_novo(Utente outroUtente) {
+        if (outroUtente.idade < this.idade) {
+            return outroUtente.nome;
         }else{
             return this.nome;
         }
