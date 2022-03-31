@@ -13,8 +13,17 @@ public class Utente {
     private String nome, genero;
     private int idade, peso;
     private float altura;
+    
+    private static final String NOME_POR_OMISSAO = "Sem Nome", GENERO_POR_OMISSAO = "";
+    private static final int IDADE_POR_OMISSAO = 0, PESO_POR_OMISSAO = 0;
+    private static final float ALTURA_POR_OMISSAO = 0;
 
     public Utente() {
+        setNome(NOME_POR_OMISSAO);
+        setGenero(GENERO_POR_OMISSAO);
+        setIdade(IDADE_POR_OMISSAO);
+        setPeso(PESO_POR_OMISSAO);
+        setAltura(ALTURA_POR_OMISSAO);
         count++;
     }
 
