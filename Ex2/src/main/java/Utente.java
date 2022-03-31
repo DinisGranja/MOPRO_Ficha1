@@ -102,9 +102,9 @@ public class Utente {
     public String grau() {
         if (imc() <= 19) {
             return "Abaixo do peso normal";
-        } else if (imc() <= 25 && imc() > 19) {
+        } else if (imc() <= 25) {
             return "Peso normal";
-        } else if (imc() <= 30 && imc() > 25) {
+        } else if (imc() <= 30) {
             return "Excesso de peso";
         } else {
             return "Obeso";
