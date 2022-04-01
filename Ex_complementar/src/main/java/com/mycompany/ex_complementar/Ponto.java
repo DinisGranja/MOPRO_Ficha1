@@ -100,9 +100,11 @@ public class Ponto {
         return Math.sqrt(Math.pow((p.x - 0), 2) + Math.pow((p.y - 0), 2));
     }
     
-    public static Ponto maisProximoDaOrigem(Ponto [] vec){
-        if (calcularProximoDaOrigem(vec[0]) < calcularProximoDaOrigem(vec[1])) {
-            
+    public Ponto maisProximoDaOrigem(Ponto [] vec){
+        if (calcularDistanciaZero(vec[0]) < calcularDistanciaZero(vec[1])) {
+            return vec[0];
+        }else{
+            return vec[1];
         }
     }
 }

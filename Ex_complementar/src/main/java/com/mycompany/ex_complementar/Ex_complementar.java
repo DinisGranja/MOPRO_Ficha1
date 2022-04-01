@@ -25,6 +25,9 @@ public class Ex_complementar {
         System.out.println(q.coordenadasPositivas());
         System.out.println(p.calcularDistancia(q));
         
+        //Calcular o ponto mais próximo da Origem
+        System.out.println(p.maisProximoDaOrigem(vec));
+        
         
     }
 }
