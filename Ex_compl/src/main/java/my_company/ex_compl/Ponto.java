@@ -2,14 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.ex_complementar;
+package my_company.ex_compl;
 
 /**
  *
  * @author dinis
  */
 public class Ponto {
-
     private int x, y;
     private static final int ABCISSA_POR_OMISSAO = 0;
     private static final int ORDENADA_POR_OMISSAO = 0;
@@ -96,8 +95,8 @@ public class Ponto {
      * @return distância
      */
     public double calcularDistanciaZero(Ponto q) {
-        Ponto p = this;
-        return Math.sqrt(Math.pow((p.x - 0), 2) + Math.pow((p.y - 0), 2));
+        
+        return Math.sqrt(Math.pow((q.x - 0), 2) + Math.pow((q.y - 0), 2));
     }
     
     public Ponto maisProximoDaOrigem(Ponto [] vec){
